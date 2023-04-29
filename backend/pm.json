@@ -1,0 +1,18 @@
+{
+    "apps": [
+        {
+            "name": "Backend",
+            "script":"./app.js",
+            "watch": true,
+            "ignore_watch": [
+                "node_modules",
+                "config.env"
+            ],
+            "instances": 1,
+            "env":{
+                "PORT":5050,
+                "DB" : "mongodb+srv://admin:adminadmin2@cluster2.jl0yw0f.mongodb.net/Projects?retryWrites=true&w=majority"
+            }
+        }
+    ]
+}
