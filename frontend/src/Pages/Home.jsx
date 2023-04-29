@@ -1,6 +1,7 @@
 import React from 'react';
 import axios from "axios";
 
+import { Link } from 'react-router-dom';
 
 const Home = () => {
 
@@ -19,6 +20,10 @@ const Home = () => {
 
     return (
         <>
+            <center>
+                <Link to="/auth" style={{ color: "coral", textDecoration: "none", fontSize: "1.1rem", textTransform: "uppercase" }}>Auth Page</Link>
+            </center>
+
             {project.map((data) => {
                 return (
 
