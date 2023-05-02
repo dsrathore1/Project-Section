@@ -29,7 +29,7 @@ const Home = (props) => {
                     {props.name ? `Welcome ${props.name} and your email is ${props.email}` : "Login Please..."}
                 </h1>
                 <Link to="/modal" style={{ color: "coral", textDecoration: "none", fontSize: "1.1rem", textTransform: "uppercase" }}>Modal Page</Link>
-                
+                <br />
                 <button onClick={() => { signOut(auth) }}>Sign Out</button>
             </center>
 
