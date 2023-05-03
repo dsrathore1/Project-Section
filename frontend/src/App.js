@@ -3,6 +3,7 @@ import { BrowserRouter as Router, Routes, Route } from 'react-router-dom';
 import Home from './Pages/Home';
 import Auth from './Pages/Auth';
 import { auth } from "./firebaseConfig";
+import Modal from "./Pages/Modal";
 
 function App() {
   const [userName, setUserName] = React.useState("");
@@ -24,6 +25,7 @@ function App() {
         <Routes>
           <Route path='/' element={<Home name={userName} email={email} />} />
           <Route path="/auth" element={<Auth />} />
+          <Route path="/modal" element={<Modal />} />
         </Routes>
       </Router>
     </div>
